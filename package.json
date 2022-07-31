@@ -7,15 +7,19 @@
   "scripts": {
     "tsc": "tsc",
     "tsc:check": "tsc --noEmit",
+    "build": "npm run tsc",
+    "rebuild": "npm run clean && npm run build",
     "lint": "npx eslint . --max-warnings=0",
     "lint:all": "npm run lint && npm run prettier:check && npm run spell:check",
     "lint:fix": "npm run lint --fix",
     "spell:check": "cspell \"{README.md,.github/*.md,src/**/*.ts}\"",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "clean:all": "npm run clean",
     "test": "echo 'TODO: jest'",
     "test:all": "npm run tsc:check && npm run test",
-    "test:ci": "npm run lint:all && npm run test:all"
+    "test:ci": "npm run clean:all && npm run lint:all && npm run test:all"
   },
   "repository": {
     "type": "git",
