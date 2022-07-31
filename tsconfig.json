@@ -1,9 +1,9 @@
 {
-  "extends": "@trapcodien/tsconfig/tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist"
+    "rootDir": ".",
+    "outDir": ".",
+    "resolveJsonModule": true,
+    "composite": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules/**"]
+  "files": ["package.json"]
 }
