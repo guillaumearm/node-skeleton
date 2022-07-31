@@ -22,6 +22,12 @@ git clone -b express https://github.com/guillaumearm/node-skeleton.git my-expres
 git clone -b react https://github.com/guillaumearm/node-skeleton.git my-react-project
 ```
 
+### For CLI
+
+```shell
+git clone -b cli https://github.com/guillaumearm/node-skeleton.git my-cli-project
+```
+
 ## Rename the project
 
 Change `name` and `description` in `package.json`, then:
