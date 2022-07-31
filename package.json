@@ -1,9 +1,12 @@
 {
   "name": "node-skeleton",
+  "cliName": "my-cli-skeleton",
   "private": true,
   "version": "1.0.0",
   "description": "My skeleton for node projects",
-  "main": "dist/index.js",
+  "bin": {
+    "my-cli-skeleton": "dist/index.js" 
+  },
   "scripts": {
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
