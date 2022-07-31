@@ -1,4 +1,4 @@
-import { addition } from '.';
+import { addition } from './addition';
 
 describe('node-skeleton:index', () => {
   test('it should add 2 numbers', () => {

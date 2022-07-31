@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import assert from 'assert';
-import { addition } from '../../..';
+import { addition } from '../../../addition';
 
 type CustomWorld = {
   n1: number;
