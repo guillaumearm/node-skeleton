@@ -7,9 +7,9 @@
   "scripts": {
     "start": "serve -p 1234 dist",
     "dev": "parcel -p 1234 --dist-dir .parcel-cache/dev/dist --cache-dir .parcel-cache/dev --host localhost.com",
-    "tsc": "tsc",
-    "tsc:watch": "tsc --watch",
-    "tsc:check": "tsc --noEmit",
+    "tsc": "tsc --build src",
+    "tsc:watch": "tsc --build src --watch",
+    "tsc:check": "tsc --build src --noEmit",
     "build": "NODE_ENV=production npm run tsc",
     "build:app": "NODE_ENV=production parcel build",
     "build:all": "npm run build && npm run build:app",
