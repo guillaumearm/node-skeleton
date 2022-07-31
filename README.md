@@ -7,19 +7,19 @@ Bootstrap node project quickly
 ### For Node
 
 ```shell
-git clone https://github.com/guillaumearm/node-skeleton.git#master my-node-project
+git clone -b master https://github.com/guillaumearm/node-skeleton.git my-node-project
 ```
 
 ### For Express
 
 ```shell
-git clone https://github.com/guillaumearm/node-skeleton.git#express my-express-project
+git clone -b express https://github.com/guillaumearm/node-skeleton.git my-express-project
 ```
 
 ### For React
 
 ```shell
-git clone https://github.com/guillaumearm/node-skeleton.git#react my-react-project
+git clone -b react https://github.com/guillaumearm/node-skeleton.git my-react-project
 ```
 
 ## Rename the project
